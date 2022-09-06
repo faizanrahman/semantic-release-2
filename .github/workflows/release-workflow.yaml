@@ -16,12 +16,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '12.2.0'
+          node-version: '18'
       - name: Install dependencies
         # working-directory: 
         run: |
           cd src\app
           npm ci
+          npm install @semantic-release@git
+          npm install @semantic-release@changelog
+          npm install semantic-release-plugin-update-version-in-files
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
