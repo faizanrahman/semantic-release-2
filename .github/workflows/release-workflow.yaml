@@ -22,10 +22,7 @@ jobs:
         run: |
           cd src\app
           npm ci
-          npm install @semantic-release/git
-          npm install @semantic-release/changelog
-          npm install semantic-release-plugin-update-version-in-files
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release@15.13.32
+        run: npx semantic-release
