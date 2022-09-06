@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@semantic-release/changelog": "^4.0.0",
+    "@semantic-release/git": "^7.0.18",
+    "semantic-release": "^15.13.32"
+  },
+  "dependencies": {
+    "semantic-release-plugin-update-version-in-files": "^1.0.0"
+  }
+}
